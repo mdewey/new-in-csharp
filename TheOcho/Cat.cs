@@ -1,18 +1,24 @@
 namespace TheOcho
 {
 
-    public enum CatColor{
+    public enum CatColor
+    {
         CALICO,
         ORANGE_TABBY,
-        GREY_TABBY, 
+        GREY_TABBY,
         BLACK,
-        TUXEDO 
-    }
-    public class Cat
+        TUXEDO
+    };
+    public class Cat : Pet //:IClimb
     {
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public int IQ { get; set; }
         public CatColor Color { get; set; }
+
+        // public void Climb(string direction)
+        // {
+        //     // climb over all the things here
+        // }
 
         public string Greeting()
         {
