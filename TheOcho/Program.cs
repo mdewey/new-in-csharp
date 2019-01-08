@@ -11,11 +11,12 @@ namespace TheOcho
             // COMPILE TIME ERROR!!!!
             // string name = null;
             // Console.WriteLine(name);
-            
+
             // example 2: intent!
-            var kitty = new Cat{
-                Name = "Sylvester"
-            };
+            // var kitty = new Cat{
+            //     Name = "Sylvester"
+            // };
+
             // // somewhere else
             // var count = 35;
             // if (count > 30){
@@ -23,8 +24,8 @@ namespace TheOcho
             // }
 
             // 100 lines of code later
-            Console.WriteLine(kitty.Greeting());
-            
+            // Console.WriteLine(kitty.Greeting());
+
         }
 
         static void Main(string[] args)
