@@ -29,5 +29,13 @@ namespace WpfFtw
         {
             Application.Current.Shutdown();
         }
+
+
+        private void ButtonClick_Click(object sender, RoutedEventArgs e)
+        {
+           this.OutPut.Content = "Hello world!";
+        }
+
+
     }
 }
