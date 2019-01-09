@@ -1,8 +1,8 @@
 namespace TheOcho
 {
-    interface IClimb
-    {
-        // void Climb() => Climb("up");
-        void Climb(string direction);
-    }
+interface IDancer
+{
+    void Dance() => Dance("awkwardly");
+    void Dance(string style);
+}
 }

@@ -38,10 +38,10 @@ namespace TheOcho
             {
                 if (p is Student { Graduated: false, Name: string name }) yield return name;
             }
-            // foreach (var p in myPets)
-            // {
-            //     if (p is Cat { Graduated: false, Name: string name }) yield return name;
-            // }
+foreach (var p in myPets)
+{
+    if (p is Cat { Graduated: false, Name: string name }) yield return name;
+}
         }
 
         // ===== interafaces!!
@@ -49,16 +49,16 @@ namespace TheOcho
 
         // ======= Async Streams
 
-        // static async IAsyncEnumerable<int> GetDigits()
-        // {
-        //     int result = 1;
+static async IAsyncEnumerable<int> GetDigits()
+{
+    int result = 1;
 
-        //     for (int i = 0; i < 10; i++)
-        //     {
-        //         result = result * 3;
-        //         yield return result;
-        //     }
-        // }
+    for (int i = 0; i < 10; i++)
+    {
+        result = result * 3;
+        yield return result;
+    }
+}
 
         // static async Task AsyncStreams()
         // {
@@ -77,18 +77,20 @@ namespace TheOcho
             // Console.WriteLine(name);
 
             // example 2: intent!
-            // var kitty = new Cat{
-            //     Name = "Sylvester"
-            // };
+var kitty = new Cat
+{
+    Name = "Sylvester"
+};
 
-            // // somewhere else
-            // var count = 35;
-            // if (count > 30){
-            //     kitty = null;
-            // }
+// somewhere else
+var count = 35;
+if (count > 30)
+{
+    kitty = null;
+}
 
-            // 100 lines of code later
-            // Console.WriteLine(kitty.Greeting());
+100 lines of code later
+    Console.WriteLine(kitty.Greeting());
 
         }
 
